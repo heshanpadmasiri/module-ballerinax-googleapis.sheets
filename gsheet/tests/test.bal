@@ -36,7 +36,7 @@ Client spreadsheetClient = check new (spreadsheetConfig);
 var randomString = createRandomUUIDWithoutHyphens();
 
 string spreadsheetId = "";
-string createSpreadsheetName = "Ballerina Connector";
+string createSpreadsheetName = "Ballerina Connector New";
 string testSheetName = string `Dance_${randomString.toString()}`;
 string[][] entries = [
     ["Name", "Score", "Performance", "Average"],
@@ -882,3 +882,4 @@ function testAppendCellWithAppendValue() {
         test:assertFail(spreadsheetRes.message());
     }
 }
+
